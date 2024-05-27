@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+#root {
+  background-color: antiquewhite;
+}
+
+.app {
+  color: #353C4E;
+  aspect-ratio: 10 / 16;
+  height: 70vh;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  border-bottom: 1px solid #CCC;
+}
