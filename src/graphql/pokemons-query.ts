@@ -7,7 +7,7 @@ type PokemonsRequest = {
   offset: number
 }
 
-type PokemonsResponse = {
+export type PokemonsResponse = {
   pokemons: {
     count: number
     results: Pokemon[]
