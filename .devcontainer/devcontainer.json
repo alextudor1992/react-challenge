@@ -1,6 +1,16 @@
 {
   "name": "Technical challenge - React",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:22-bullseye",
-  "postCreateCommand": "pnpm install",
-  "features": {}
+  "postCreateCommand": "pnpm install && pnpm dev",
+  "features": {},
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "streetsidesoftware.code-spell-checker",
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
 }
