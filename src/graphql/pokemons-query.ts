@@ -1,6 +1,5 @@
-import { gql, useQuery } from "@apollo/client";
-import { Pokemon } from "../types/pokemon";
-
+import { gql, useQuery } from '@apollo/client'
+import { Pokemon } from '../types/pokemon'
 
 type PokemonsRequest = {
   limit: number
@@ -25,13 +24,14 @@ const query = gql`
         image
       }
     }
-  }`;
+  }
+`
 
 export function usePokemons(page: number, count: number) {
   return useQuery<PokemonsResponse, PokemonsRequest>(query, {
     variables: {
       limit: count,
-      offset: (page - 1) * count
-    }
+      offset: (page - 1) * count,
+    },
   })
 }
