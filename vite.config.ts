@@ -9,7 +9,7 @@ export default defineConfig({
   // @ts-expect-error Safe to ignore
   test: {
     environment: 'jsdom',
-    setupFiles: ['./vitest-setup.js'],
+    setupFiles: ['./vitest-setup.ts'],
     globals: true,
   },
 })
