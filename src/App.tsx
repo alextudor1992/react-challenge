@@ -12,7 +12,7 @@ function App() {
       <PokemonsList />
       <footer className="text-xs flex justify-center items-center pb-3 pt-1 gap-1 text-gray-500">
         Powered by{' '}
-        <a href="https://pokeapi.co/" className="underline">
+        <a href="https://pokeapi.co/" className="underline" rel="sponsored">
           <img
             className="h-5"
             src="https://raw.githubusercontent.com/PokeAPI/media/master/logo/pokeapi_256.png"
